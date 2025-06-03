@@ -19,7 +19,8 @@ const db = getFirestore(app);
 
 // Provedores de autenticação
 const googleProvider = new GoogleAuthProvider();
-const discordProvider = new OAuthProvider('discord.com');
+// Aqui o ID do provedor deve ser exatamente o que você colocou no Firebase (oidc.discord)
+const discordProvider = new OAuthProvider('oidc.discord');
 
 // Funções de autenticação
 export const signInWithGoogle = async () => {
