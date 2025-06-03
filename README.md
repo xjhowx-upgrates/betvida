@@ -171,7 +171,7 @@ betvida/
 
 ## 👨‍💻 Desenvolvido por
 
-[Seu Nome] - [Seu Contato]
+@xjhowx
 
 ---
 
