@@ -1,0 +1,113 @@
+/* Estilos responsivos para o BetVida */
+
+/* Estilos para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  /* Ajustes gerais */
+  h1.text-3xl {
+    font-size: 1.5rem;
+  }
+  
+  /* Ajustes para o cabeçalho */
+  header.flex {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header .flex.items-center {
+    flex-direction: column;
+  }
+  
+  /* Ajustes para os jogos */
+  .aspect-ratio-game {
+    aspect-ratio: 3/4;
+  }
+  
+  /* Ajustes para o modal de apostas */
+  .max-w-md {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Ajustes para o player de vídeo */
+  .youtube-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Estilos para tablets (até 768px) */
+@media screen and (max-width: 768px) {
+  /* Ajustes para os jogos */
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  /* Ajustes para o ranking */
+  .ranking-item {
+    padding: 0.5rem;
+  }
+  
+  .ranking-item img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* Animações para feedback visual */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Melhorias para telas muito pequenas */
+@media screen and (max-width: 360px) {
+  .text-xl {
+    font-size: 1.1rem;
+  }
+  
+  .px-4 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .py-2 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Melhorias para telas grandes */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

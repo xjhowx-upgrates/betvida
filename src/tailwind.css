@@ -1,0 +1,3 @@
+/* Arquivo de configuração Tailwind CSS */
+/* Importando os estilos personalizados em vez de usar diretivas @tailwind */
+@import './styles/tailwind-directives.css';

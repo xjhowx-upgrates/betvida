@@ -1,0 +1,5 @@
+/* Importar diretivas Tailwind */
+@import './styles/tailwind-directives.css';
+
+/* Importar estilos responsivos */
+@import './styles/responsive.css';

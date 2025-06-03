@@ -1,0 +1,34 @@
+# Dependências
+/node_modules
+/.pnp
+.pnp.js
+
+# Testes
+/coverage
+
+# Produção
+/build
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase
+firebase-debug.log*
+firebase-debug.*.log*
+.firebase/
+
+# Editores
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
